@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Player | Modern Music Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player-header">
+            <h1 class="player-title">Harmony Player</h1>
+            <p class="player-subtitle">Your perfect music companion</p>
+            
+            <div class="album-art">
+                <img src="./images/jeff-brown-xOj6_Ha1_R8-unsplash.jpg" alt="Album Art">
+            </div>
+        </div>
+        <div class="song-info">
+            <h2 class="song-title">Summer Vibes</h2>
+            <p class="song-artist">Ocean Waves</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:07</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="shuffle-btn" title="Shuffle">
+                <i class="fas fa-random"></i>
+            </button>
+            <button class="control-btn" id="prev-btn" title="Previous">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-btn" id="play-btn" title="Play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn" id="next-btn" title="Next">
+                <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="control-btn" id="repeat-btn" title="Repeat">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        
+        <div class="volume-container">
+            <i class="fas fa-volume-up volume-icon"></i>
+            <div class="volume-bar" id="volume-bar">
+                <div class="volume-level" id="volume-level"></div>
+            </div>
+        </div>
+        
+        <div class="playlist">
+            <h3 class="playlist-title">Your Playlist</h3>
+            <div class="playlist-items">
+                <div class="playlist-item active">
+                    <img src="./images/edward-koorey-ok_jwH447dc-unsplash.jpg" alt="Summer Vibes">
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">Summer Vibes</div>
+                        <div class="playlist-item-artist">unknown</div>
+                    </div>
+                    <div class="playlist-item-duration">7:05</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <img src="./images/grant-sams-QLot1nGwusk-unsplash.jpg" alt="Night Drive">
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">Night Drive</div>
+                        <div class="playlist-item-artist">unknown</div>
+                    </div>
+                    <div class="playlist-item-duration">5:44</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <img src="./images/jeff-brown-xOj6_Ha1_R8-unsplash.jpg" alt="Urban Dreams">
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">Urban Dreams</div>
+                        <div class="playlist-item-artist">unknown</div>
+                    </div>
+                    <div class="playlist-item-duration">7:05</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <img src="./images/ken-smith-Msbaa3_TmBY-unsplash.jpg" alt="Mountain Echo">
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">Mountain Echo</div>
+                        <div class="playlist-item-artis">unknown</div>
+                    </div>
+                    <div class="playlist-item-duration">5:44</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <img src="./images/edward-koorey-ok_jwH447dc-unsplash.jpg" alt="Retro Wave">
+                    <div class="playlist-item-info">
+                        <div class="playlist-item-title">Retro Wave</div>
+                        <div class="playlist-item-artist">unknown</div>
+                    </div>
+                    <div class="playlist-item-duration">7:05</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="audio-player"></audio>
+    
+    <script src="main.js"></script>
+</body>
+</html>
