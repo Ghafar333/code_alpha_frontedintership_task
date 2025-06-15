@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modern Image Gallery</h1>
+            <p class="subtitle">Explore stunning images with smooth transitions, lightbox preview, and category filters. Hover over images for details.</p>
+        </header>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+
+        <div class="gallery">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="/images/actionvance-g41ZkoO75rE-unsplash.jpg" alt="Mountain Landscape">
+                <div class="overlay">
+                    <h3>Mountain Peaks</h3>
+                    <p>Snow-capped mountains at sunrise</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="/images/paul-pastourmatzis-OZdKEwDXXJU-unsplash.jpg" alt="Forest Mist">
+                <div class="overlay">
+                    <h3>Misty Forest</h3>
+                    <p>Morning mist in a dense forest</p>
+                </div>
+            </div>
+            
+            <!-- Architecture Images -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/grant-sams-QLot1nGwusk-unsplash.jpg" alt="Modern Building">
+                <div class="overlay">
+                    <h3>Urban Architecture</h3>
+                    <p>Contemporary building design</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/yann-allegre-v1jO6pN45_4-unsplash.jpg" alt="House Design">
+                <div class="overlay">
+                    <h3>Modern Home</h3>
+                    <p>Minimalist residential architecture</p>
+                </div>
+            </div>
+            
+            <!-- Travel Images -->
+            <div class="gallery-item" data-category="travel">
+                <img src="/images/jeff-brown-xOj6_Ha1_R8-unsplash.jpg" alt="Cityscape">
+                <div class="overlay">
+                    <h3>City Skyline</h3>
+                    <p>Urban landscape at twilight</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="travel">
+                <img src="/images/world-wanderer-lIM-S3NS1uk-unsplash.jpg" alt="Beach Destination">
+                <div class="overlay">
+                    <h3>Tropical Beach</h3>
+                    <p>Pristine sandy beach with palm trees</p>
+                </div>
+            </div>
+            
+            <!-- Abstract Images -->
+            <div class="gallery-item" data-category="abstract">
+                <img src="/images/rodion-kutsaiev-pVoEPpLw818-unsplash.jpg" alt="Colorful Art">
+                <div class="overlay">
+                    <h3>Colorful Abstract</h3>
+                    <p>Vibrant fluid art composition</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg" alt="Geometric Shapes">
+                <div class="overlay">
+                    <h3>Geometric Patterns</h3>
+                    <p>Minimalist shapes and forms</p>
+                </div>
+            </div>
+            
+            <!-- Additional Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="/images/paul-pastourmatzis-OZdKEwDXXJU-unsplash.jpg" alt="Enchanted Forest">
+                <div class="overlay">
+                    <h3>Enchanted Forest</h3>
+                    <p>Sunlight filtering through trees</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/bailey-alexander-PE4pFgcYzoQ-unsplash.jpg" alt="Historic Building">
+                <div class="overlay">
+                    <h3>Historic Architecture</h3>
+                    <p>Classic building with intricate details</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="travel">
+                <img src="/images/ken-smith-Msbaa3_TmBY-unsplash.jpg" alt="Road Trip">
+                <div class="overlay">
+                    <h3>Scenic Road</h3>
+                    <p>Winding road through mountains</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/luke-chesser-IGtutkXikuc-unsplash.jpg" alt="Color Gradient">
+                <div class="overlay">
+                    <h3>Color Gradient</h3>
+                    <p>Smooth transition between colors</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Modern Image Gallery &copy; 2023 | Responsive Design with Lightbox & Filters</p>
+        </footer>
+    </div>
+    
+    <!-- Lightbox Structure -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Lightbox Image">
+            <div class="image-info">
+                <h3 class="lightbox-title">Image Title</h3>
+                <p class="lightbox-category">Category</p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
